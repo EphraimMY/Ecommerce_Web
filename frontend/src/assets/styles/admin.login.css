@@ -1,0 +1,44 @@
+@import url("../../index.css");
+.form-login {
+  width: 384px;
+  max-width: 100%;
+  min-height: 453px;
+  border: 2px solid var(--neutral-B100);
+  border-radius: 8px;
+  background: var(--neutral-W900);
+  margin: auto;
+  margin-top: 20px;
+  padding: 32px;
+}
+
+.login-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  width: 100%;
+  padding: 3px 0;
+  margin-bottom: 40px;
+}
+
+.login-head > .logo {
+  height: 93%;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 10px;
+  }
+
+  .form-login {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+}

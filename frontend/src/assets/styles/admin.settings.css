@@ -1,0 +1,25 @@
+.settings-content {
+  background-color: var(--neutral-W900);
+  border: 2px solid var(--neutral-B100);
+  border-radius: 8px;
+}
+
+.settings-header {
+  height: 86px;
+  border-bottom: 2px solid var(--neutral-B100);
+  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.settings-body {
+  padding: 40px 32px;
+}
+
+.settings-inputs {
+  width: 320px;
+}
+
+.settings-btn > button {
+  padding: 0 20px;
+}

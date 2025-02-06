@@ -1,0 +1,100 @@
+.product-item-cart {
+  width: 100%;
+  /* height: 80px; */
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--neutral-B100);
+  padding-bottom: 20px;
+}
+
+.product-item-cart:last-child {
+  border: none;
+}
+
+.product-item-cart > .image {
+  position: relative;
+  height: 100%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border: 4px;
+  background-color: var(--neutral-B100);
+  border-radius: 4px;
+}
+
+.product-item-cart > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-item-cart > .image > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--neutral-W100);
+  height: 24px;
+  width: 24px;
+  border-radius: 0;
+}
+
+.product-item-cart > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-item-cart > .content > .top,
+.product-item-cart > .content > .top > .color-size,
+.product-item-cart > .content > .middle,
+.product-item-cart > .content > .middle .btns {
+  display: flex;
+}
+
+.product-item-cart > .content > .middle {
+  align-items: center;
+  gap: 8px;
+}
+
+.product-item-cart > .content > .top {
+  align-content: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-item-cart > .content > .top > .color-size {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-item-cart > .content > .top > .color-size > .color {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.product-item-cart > .content > .middle .btns {
+  width: 107px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--neutral-B100);
+  border-radius: 4px;
+}
+
+.product-item-cart > .content > .middle .btns > button,
+.product-item-cart > .content > .middle .btns > span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--neutral-B900);
+}
+
+.product-item-cart > .content > .middle .btns > button:hover {
+  background-color: var(--neutral-B100);
+}

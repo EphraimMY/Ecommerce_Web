@@ -1,0 +1,12 @@
+.size-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--neutral-B100);
+}
+
+.size-checkbox > input[type="checkbox"] {
+  display: none;
+}

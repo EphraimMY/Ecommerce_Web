@@ -1,0 +1,111 @@
+.product-card {
+  width: 256px;
+  min-height: 434px;
+  padding: 16px 8px;
+}
+
+.product-card-cover {
+  width: 240px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--neutral-W100);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.product-card-cover > .btn-like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-W900);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.product-card-cover > .btn-like:hover > i {
+  color: var(--red-700);
+}
+
+.product-card-cover > .btn-like > i {
+  color: var(--neutral-B600);
+}
+
+.product-card-cover > .image {
+  width: 230px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.product-card-cover > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn-add-to-cart {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  background: var(--neutral-B900);
+  color: var(--neutral-W900);
+  cursor: pointer;
+  transition: 0.2s ease-in-out background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.product-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.product-card-footer > .product-card-title > h4 {
+  line-height: 24px;
+  color: var(--neutral-B900);
+}
+
+.product-card-footer > .product-card-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-card-price > .btn-status {
+  width: 89px;
+  height: 28px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-W900);
+  border: 1px solid var(--neutral-W100);
+  color: var(--neutral-B900);
+  text-transform: uppercase;
+}
+
+.product-card:hover > .product-card-cover > .image {
+  opacity: 0.6;
+}
+
+.product-card:hover > .product-card-cover > .btn-like,
+.product-card:hover > .product-card-cover > .btn-add-to-cart {
+  opacity: 1;
+  visibility: visible;
+}

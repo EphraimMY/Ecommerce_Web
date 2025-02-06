@@ -1,0 +1,14 @@
+.client-main {
+  width: 100%;
+  background-color: var(--neutral-W900);
+  padding: 40px 0;
+}
+
+.client-main-content {
+  width: 1116px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}

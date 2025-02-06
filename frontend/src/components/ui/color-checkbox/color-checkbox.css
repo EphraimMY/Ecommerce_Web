@@ -1,0 +1,15 @@
+.color-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  outline: 1px solid #131111;
+}
+
+.color-label > input[type="checkbox"] {
+  display: none;
+}
+
+/* Mette le code pour quand c'est coché  */

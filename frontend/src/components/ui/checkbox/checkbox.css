@@ -1,0 +1,23 @@
+.checkbox-div {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--neutral-B100);
+}
+
+.checkbox-div > label {
+  color: var(--neutral-B400);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.checkbox-div > input {
+  cursor: pointer;
+  border: 1px solid var(--neutral-B400);
+  height: 18px;
+  width: 18px;
+}

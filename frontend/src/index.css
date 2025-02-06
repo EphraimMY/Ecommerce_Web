@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --primary-B100: #f0f1ff;
+  --primary-B200: #e3e5ff;
+  --primary-B300: #b7bfff;
+  --primary-B400: #a8b2ff;
+  --primary-B500: #97a6ff;
+  --primary-B600: #869aff;
+  --primary-B700: #728fff;
+  --primary-B800: #5c83ff;
+  --primary-B900: #4078ff;
+  --neutral-B100: #e6e7e8;
+  --neutral-B200: #b6b7bc;
+  --neutral-B300: #878a92;
+  --neutral-B400: #71747e;
+  --neutral-B500: #5c5f6a;
+  --neutral-B600: #474b57;
+  --neutral-B700: #333845;
+  --neutral-B800: #202533;
+  --neutral-B900: #0e1422;
+  --neutral-W100: #f6f6f6;
+  --neutral-W200: #e9e9eb;
+  --neutral-W900: #ffffff;
+  --blue-100: #e8effd;
+  --blue-200: #d1defb;
+  --blue-300: #bacefa;
+  --blue-400: #a3bef8;
+  --blue-500: #8cadf6;
+  --blue-600: #759df4;
+  --blue-700: #5e8cf3;
+  --blue-800: #477cf1;
+  --blue-900: #306cef;
+  --green-100: #d5e5d7;
+  --green-200: #c1d8c4;
+  --green-300: #98be9e;
+  --green-400: #83b18b;
+  --green-500: #6fa479;
+  --green-600: #5a9868;
+  --green-700: #458b56;
+  --green-800: #2c7f45;
+  --green-900: #057234;
+  --red-100: #fbd9d0;
+  --red-200: #f8c5b9;
+  --red-300: #ee9f8d;
+  --red-400: #e88c77;
+  --red-500: #e17862;
+  --red-600: #d9644e;
+  --red-700: #d14f3a;
+  --red-800: #c83727;
+  --red-900: #be1313;
+  --yellow-100: #fff1d8;
+  --yellow-200: #ffeac4;
+  --yellow-300: #ffdc9e;
+  --yellow-400: #ffd58a;
+  --yellow-500: #fdcf76;
+  --yellow-600: #fbc862;
+  --yellow-700: #f9c14c;
+  --yellow-800: #f6bb33;
+  --yellow-900: #f3b40a;
+  --01: 4px;
+  --02: 6px;
+  --03: 8px;
+  --04: 12px;
+  --05: 16px;
+  --06: 24px;
+  --07: 32px;
+  --08: 40px;
+  --09: 48px;
+  --10: 56px;
+  --11: 64px;
+  --12: 72px;
+  --13: 80px;
+  --14: 88px;
+  --15: 96px;
+  --16: 104px;
+  --17: 112px;
+  --18: 120px;
+  --19: 128px;
+  --20: 136px;
+  --21: 144px;
+  --22: 152px;
+  --23: 160px;
+  --24: 168px;
+  --d-grid-container: 1116px;
+  --d-grid-gutter: 24px;
+  --d-grid-column-width: 71px;
+  --d-grid-margin: 12px;
+  --d-grid-column-number: 12px;
+  --d-grid-baseline: 8px;
+  --t-grid-gutter: 24px;
+  --t-grid-column-width: 56px;
+  --t-grid-margin: 12px;
+  --t-grid-column-number: 12px;
+  --t-grid-baseline: 8px;
+  --m-grid-gutter: 24px;
+  --m-grid-column-width: auto;
+  --m-grid-margin: 12px;
+  --m-grid-column-number: 4px;
+  --m-grid-baseline: 4px;
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* Pour les navigateurs basés sur WebKit (Chrome, Edge, Safari, etc.) */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--neutral-W900);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-B900);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--neutral-B900);
+}
+
+/* Pour Firefox */
+* {
+  scrollbar-width: thin; /* Taille fine */
+  scrollbar-color: var(--neutral-B900) var(--neutral-W900); /* Couleur du thumb et du track */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-W100);
+  overflow-x: hidden;
+}
+
+hr {
+  border-bottom: none;
+}
+
+h1 {
+  color: var(--neutral-B900);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--neutral-B900);
+  line-height: auto;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p {
+  color: var(--neutral-B900);
+  font-size: 14px;
+  line-height: 175%;
+}
+
+label {
+  color: var(--neutral-B900);
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid var(--neutral-B100);
+  margin: 30px 0;
+}
+
+button,
+.btn {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background: var(--neutral-B900);
+  color: var(--neutral-W900);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease-in-out background;
+}
+
+button:hover,
+.btn:hover {
+  background: var(--neutral-B800);
+}
+
+tr td,
+tr th {
+  font-size: 14px;
+}
+
+tr {
+  border-bottom: 1px solid #e5e5e570;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+/* style de la partie admin */
+
+.admin-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.admin-middle-content {
+  min-width: 1116px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+section.admin-content {
+  margin-top: 20px;
+}
+
+.login-section {
+  width: 100%;
+  background-color: var(--neutral-W900);
+  padding: 60px 0;
+}
+
+.login-content {
+  width: 320px;
+  margin: 0 auto;
+}
+.login-content,
+.login-content > form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-content a,
+.login-content p {
+  color: var(--neutral-B500);
+  font-size: 14px;
+}
+
+.login-content button {
+  width: 100%;
+}
+
+.login-content .log-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--neutral-B200);
+  border-radius: 4px;
+  padding: 10px 24px;
+}
+
+.hr-or {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-B100);
+  position: relative;
+}
+
+.hr-or::before {
+  content: "OR";
+  font-size: 12px;
+  background-color: var(--neutral-W900);
+  color: var(--neutral-B500);
+  display: block;
+  padding: 0 8px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+.login-content > a {
+  text-align: center;
+}

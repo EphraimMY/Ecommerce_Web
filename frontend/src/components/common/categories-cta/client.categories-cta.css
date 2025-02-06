@@ -1,0 +1,42 @@
+.categories-cta-section {
+  width: 100%;
+  background: linear-gradient();
+}
+
+.cta-content {
+  width: 1116px;
+  height: 304px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.cta-content > .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 462px;
+  gap: 12px;
+}
+
+.cta-content > .left > p {
+  color: var(--neutral-B600);
+}
+
+.cta-content > .left > a {
+  padding: 0 30px;
+}
+
+.cta-content > .right {
+  height: 100%;
+}
+
+.cta-content > .right > .image {
+  height: 100%;
+}
+
+.cta-content > .right > .image > img {
+  height: 100%;
+}

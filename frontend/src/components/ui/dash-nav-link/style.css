@@ -1,0 +1,30 @@
+.dash-nav-link {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 3px 25px;
+  border-radius: 8px;
+  color: var(--neutral-B500);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dash-nav-link.active {
+  background-color: var(--neutral-W100);
+  color: var(--neutral-B900);
+}
+
+.dash-nav-link.active > .icon svg {
+  fill: var(--neutral-B900);
+}
+
+.dash-nav-link:hover {
+  background-color: var(--neutral-W200);
+  color: var(--neutral-B900);
+}
+
+.dash-nav-link > .icon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,14 @@
+.best-stelling-section {
+  width: 100vw;
+  padding: 40px 0;
+  background-color: var(--neutral-W900);
+}
+.best-selling {
+  width: 1116px;
+  height: 266px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+}

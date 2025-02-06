@@ -1,0 +1,72 @@
+ecommerce-project/
+│
+├── public/                     # Fichiers statiques (HTML, favicon, images, etc.)
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/                        # Code source principal
+│   ├── assets/                 # Ressources comme images, icônes, styles globaux
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── styles/             # Fichiers CSS ou SCSS globaux
+│   │       └── global.css
+│   │
+│   ├── components/             # Composants réutilisables
+│   │   ├── common/             # Composants communs aux deux parties (admin/client)
+│   │   │   ├── Header.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Sidebar.js
+│   │   │   └── Loader.js
+│   │   │
+│   │   └── ui/                 # Composants UI (boutons, modals, etc.)
+│   │       ├── Button.js
+│   │       └── Modal.js
+│   │
+│   ├── pages/                  # Pages principales
+│   │   ├── admin/              # Pages du côté admin
+│   │   │   ├── Dashboard.js
+│   │   │   ├── Products.js
+│   │   │   ├── Orders.js
+│   │   │   └── Users.js
+│   │   │
+│   │   └── client/             # Pages du côté client
+│   │       ├── Home.js
+│   │       ├── ProductDetail.js
+│   │       ├── Cart.js
+│   │       ├── Checkout.js
+│   │       └── Profile.js
+│   │
+│   ├── routes/                 # Fichiers de configuration des routes
+│   │   ├── AdminRoutes.js
+│   │   ├── ClientRoutes.js
+│   │   └── index.js            # Fichier d'agrégation des routes
+│   │
+│   ├── context/                # Contexte global (React Context API)
+│   │   ├── AuthContext.js      # Gestion de l'authentification
+│   │   ├── CartContext.js      # Gestion du panier
+│   │   └── AdminContext.js     # Données spécifiques à l'admin
+│   │
+│   ├── hooks/                  # Hooks personnalisés
+│   │   ├── useAuth.js
+│   │   ├── useCart.js
+│   │   └── useFetch.js
+│   │
+│   ├── services/               # Services pour les appels API
+│   │   ├── api.js              # Configuration des appels API
+│   │   ├── productService.js   # Gestion des produits
+│   │   ├── orderService.js     # Gestion des commandes
+│   │   └── userService.js      # Gestion des utilisateurs
+│   │
+│   ├── utils/                  # Utilitaires généraux
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   └── constants.js
+│   │
+│   ├── App.js                  # Composant principal
+│   ├── index.js                # Point d'entrée de l'application
+│   └── reportWebVitals.js      # Outils pour mesurer la performance
+│
+├── .env                        # Variables d'environnement
+├── .gitignore                  # Fichiers à ignorer par Git
+├── package.json                # Dépendances et scripts
+└── README.md                   # Documentation du projet

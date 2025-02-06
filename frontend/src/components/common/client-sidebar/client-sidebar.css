@@ -1,0 +1,12 @@
+.client-side-bar {
+  width: 248px;
+  min-height: 504px;
+  padding: 30px 16px;
+  border-right: 1px solid var(--neutral-B100);
+}
+.links-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}

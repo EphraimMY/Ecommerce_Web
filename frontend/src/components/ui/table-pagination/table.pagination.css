@@ -1,0 +1,39 @@
+.table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 20px 32px;
+}
+
+.table-pagination > button {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid var(--neutral-B100);
+  background-color: var(--neutral-W900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: var(--neutral-B500);
+}
+
+.table-pagination > button:hover {
+  background-color: var(--blue-100);
+  color: var(--blue-700);
+}
+
+.table-pagination > button > i {
+  font-size: 12px;
+}
+
+.table-pagination > button.active {
+  background-color: var(--blue-100);
+  color: var(--blue-700);
+}
+
+.table-pagination > button.active:hover {
+  background-color: var(--blue-100);
+  color: var(--blue-700);
+}

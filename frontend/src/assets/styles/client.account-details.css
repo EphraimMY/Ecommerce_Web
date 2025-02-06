@@ -1,0 +1,35 @@
+.client-account-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.client-account-details .form-group {
+  min-width: 320px;
+}
+
+.client-account-details .btn-save {
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+.profil-initials {
+  margin: 50px 0 30px 0;
+}
+
+.profil-initials > .circle {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: var(--blue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil-initials > .circle > span {
+  color: var(--blue-900);
+  text-transform: uppercase;
+}

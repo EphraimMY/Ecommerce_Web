@@ -1,0 +1,24 @@
+.admin-header {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  color: var(--neutral-B500);
+}
+
+.admin-header .logo {
+  height: 23px;
+  width: 23px;
+}
+
+.admin-header > .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+span.active-page {
+  color: var(--neutral-B900);
+}

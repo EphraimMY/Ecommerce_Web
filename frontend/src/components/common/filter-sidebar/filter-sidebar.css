@@ -1,0 +1,35 @@
+.filter-side-bar {
+  width: 248px;
+  padding: 24px 16px;
+  border: 1px solid var(--neutral-B100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  border-radius: 8px;
+}
+
+.filter-side-bar h3 {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar-cathegories {
+  width: 100%;
+}
+
+.sidebar-cathegories > .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sidebar-colors > .checkboxs,
+.sidebar-sizes > .sizes-inputs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}

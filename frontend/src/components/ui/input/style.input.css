@@ -1,0 +1,25 @@
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-div > label {
+  color: var(--neutral-B600);
+}
+
+.input-div > input {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-B100);
+  padding: 0 10px;
+}
+
+.input-div > input:focus {
+  border: none;
+  outline: 2px solid var(--neutral-B600);
+}

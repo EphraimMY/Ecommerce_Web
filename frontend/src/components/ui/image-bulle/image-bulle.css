@@ -1,0 +1,15 @@
+.image-bulle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--neutral-W100);
+}
+
+.image-bulle > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,76 @@
+.client-checkout {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.checkout-content {
+  width: 1116px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-checkout {
+  width: 536px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.check-form-content,
+.check-form-content > form {
+  width: 100%;
+}
+
+.check-form-content > form > .form-check-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 16px;
+}
+
+.right-checkout {
+  min-height: 504px;
+  width: calc(372px + 60px);
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border-left: 1px solid var(--neutral-B100);
+}
+
+.btn-edit-order {
+  background-color: transparent;
+  border: 1px solid var(--neutral-B100);
+  color: var(--neutral-B900);
+  padding: 12px 24px;
+}
+
+.btn-edit-order:hover {
+  color: var(--neutral-W100);
+}
+
+.btn-order {
+  width: 100%;
+}
+
+.top-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.top-order > .imgs {
+  display: flex;
+  gap: 12px;
+}
+
+.total-order {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}

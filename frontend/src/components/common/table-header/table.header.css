@@ -1,0 +1,13 @@
+.table-head-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.table-head-right > button {
+  padding: 0 20px;
+}
+
+.table-head-right > .table-search {
+  position: relative;
+}
