@@ -25,6 +25,7 @@ import Login from "./pages/client/Login";
 import ForgotPassword from "./pages/client/ForgotPassword";
 import ResetPassword from "./pages/client/ResetPassword";
 import Product from "./pages/client/Product";
+import { AdminAddProduct } from "./pages/admin/AdminAddProduct";
 
 const router = createBrowserRouter([
   {
@@ -93,6 +94,7 @@ const router = createBrowserRouter([
     children: [
       { path: "Dashboard", element: <AdminDashboard /> },
       { path: "Products", element: <AdminProducts /> },
+      { path: "AddProduct", element: <AdminAddProduct /> },
       { path: "Orders", element: <AdminOrders /> },
       { path: "Customers", element: <AdminCustomers /> },
       { path: "Reviews", element: <AdminReviews /> },

@@ -11,7 +11,8 @@
   color: var(--neutral-B600);
 }
 
-.input-div > input {
+.input-div > input,
+.input-div > textarea {
   height: 40px;
   width: 100%;
   border-radius: 6px;
@@ -19,7 +20,8 @@
   padding: 0 10px;
 }
 
-.input-div > input:focus {
+.input-div > input:focus,
+.input-div > textarea:focus {
   border: none;
   outline: 2px solid var(--neutral-B600);
 }

@@ -77,7 +77,7 @@ class Address{
         $this->country = $country;
     }
 
-    public function all(){
+    public static function all(){
         $db = Database::getConnection();
         $sql = "SELECT * FROM addresses";
         $result = $db->query($sql);
@@ -105,7 +105,7 @@ class Address{
         $stmt->execute([$this->id]);
     }
 
-    public function find($id){
+    public static function find($id){
         $db = Database::getConnection();
         $sql = "SELECT * FROM addresses WHERE id = ?";
         $stmt = $db->prepare($sql);
@@ -114,7 +114,7 @@ class Address{
         return $result;
     }
 
-    public function findByUserId($user_id){
+    public static function findByUserId($user_id){
         $db = Database::getConnection();
         $sql = "SELECT * FROM addresses WHERE user_id = ?";
         $stmt = $db->prepare($sql);
